@@ -1,0 +1,1244 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ConneXuz</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="robots" content="index, follow" />
+        <meta name='description' content='' />
+        <meta name='keywords' content='' />
+        <meta name='abstract' content='' />
+        <meta name='author' content='' />
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a href="#" class="navbar-brand"><img src="images/logo.png" alt="Logo" /></a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu-tile">Menu</span>
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <form class="form-inline my-2 my-lg-0 ml-auto col-md-4">
+                            <input class="form-control mr-sm-2 col-md-12" type="search" placeholder="Search friends, photos" aria-label="Search">
+                        </form>
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link active" href="#">interactions</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">profile</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">networks</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">settings</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">help</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    James<i class="fas fa-angle-down"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="main-content-section">
+            <div class="container">
+                <!-- START-PROFILE-DETAILS-->
+                <div class="conn-profile-details">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="conn-profile-img-wrap">
+                                <img src="images/user-dummy.jpg" class="img-fluid conn-user-img rounded-circle" width="70px" height="70px;">
+                                <p class="conn-user-name">connxuz</p>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="conn-profile-comments-wrap">
+                                <div class="conn-profile-img-subwrap">
+                                    <img src="images/user-dummy.jpg" class="img-fluid conn-user-img rounded-circle" width="70px" height="70px;">
+                                </div>
+                                <div class="form-group conn-text-area">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Write what u wish" data-toggle="modal" data-target="#SocialPost"></textarea>
+                                </div>
+                                <div class="conn-profile-details-icon-wrap">
+                                    <a data-toggle="modal" data-target="#SocialPost" href="javascript:void(0);" class="link-for link-for-edit">
+                                        <i class="far fa-edit"></i>
+                                    </a>
+                                    <a data-toggle="modal" data-target="#SocialPost" href="javascript:void(0);" class="link-for link-for-camera">
+                                        <i class="fas fa-camera"></i>
+                                    </a>
+                                    <a data-toggle="modal" data-target="#SocialPost" href="javascript:void(0);" class="link-for link-for-video">
+                                        <i class="fas fa-video"></i>
+                                    </a>
+                                    <a data-toggle="modal" data-target="#SocialPost" href="javascript:void(0);" class="link-for link-for-location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </a>
+                                </div>
+                                <div class="conn-profile-details-btn-wrap">
+                                    <a href="#" class="conn-btn conn-publish-btn btn">Publish</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END-PROFILE-DETAILS-->
+        <!-- START MY POST SECTION -->
+        <section class="wp-main-post-listing-wrap-area">
+            <div class="container">
+                <div class="wp-list-title-wrap">
+                    <div class="row">
+                        <div class="col-md-10 col-sm-9 col-8">
+                            <div class="conn-my-post-details-title-wrap">
+                                <h4 class="conn-my-post-details-title">My Post</h4>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-3 col-4">
+                            <div class="conn-invite-btn-wrap">
+                                <button class="btn btn-primary conn-invite-btn" data-toggle="modal" data-target="#SendInvite">Invites</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wp-scrollble-main-post-list-wrap">
+                    <!-- START SINGLE POST -->
+                    <div class="wp-single-post-list">
+                        <div class="row m-0">
+                            <div class="col-md-6 p-0">
+                                <div class="conn-my-post-img-wrap" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                    <img src="images/user-img.png" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-6 p-0">
+                                <div class="wp-single-post-content-wrap-area">
+                                    <div class="wp-single-post-content-wrap">
+                                        <div class="media">
+                                            <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="70px">
+                                            <div class="media-body">
+                                                <div class="conn-my-post-details-user-title">
+                                                    <h5 class="publisher-name-text">Sarah Cruiz <span class="conn-following-wrap"><a href="#" class="conn-following-title">following</a></span></h5>
+                                                    <p class="published-time-ago-text">Published a photo about 15min ago</p>
+                                                </div>
+                                                <div class="conn-like-unlike-icon-wrap">
+                                                    <span class="conn-like-icon wp-like-hover-info-view"><a href="#" class="active "><i class="fas fa-thumbs-up"> Like</i></a>
+                                                        <div class="wp-total-likes-name-and-count">
+                                                            <span>John Deo</span>
+                                                            <span>John Paul</span>
+                                                            <span>Pater Pan</span>
+                                                            <span>John Deo</span>
+                                                            <span>John Paul</span>
+                                                            <span>Pater Pan</span>
+                                                            <span>John Deo</span>
+                                                            <span>John Paul</span>
+                                                            <span>Pater Pan</span>
+                                                            <span>.. 98 more</span>
+                                                        </div>
+                                                    </span>
+                                                    <span class="expand-post-btn-icon"><a href="javascript:;" data-toggle="modal" data-target="#myModal"><i class="fas fa-expand"></i></a></span>
+                                                </div>
+                                                <p class="conn-my-post-commemnt-content">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wp-single-post-comment-listing-wrap">
+                                        <div class="single-media-comment-list">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">
+                                                            Sarah Cruiz
+                                                            <span class="comments-text-content">
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                            </span>
+                                                            <div class="like-comment-replay-wrap-boxx">
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                            </div>
+                                                            <div class="wp-single-poste-single-commemnt-replay-wrap">
+                                                                <div class="wp-single-poste-single-commemnt-replay-img-wrap">
+                                                                    <img src="images/user-dummy.jpg" alt="Jane Doe" class="mr-3 rounded-circle img-fluid">
+                                                                </div>
+                                                                <div class="wp-single-poste-single-commemnt-replay-form-wrap">
+                                                                    <form class="post-comment-form" action="#" method="post">
+                                                                        <input type="text" class="form-control" placeholder="Post a Comment"/>
+                                                                        <button class="btn btn-sumnit-comment post-comment" type="submit"><i class="fab fa-telegram-plane"></i></button>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-media-comment-list">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">
+                                                            Sarah Cruiz
+                                                            <span class="comments-text-content">
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                            </span>
+                                                            <div class="like-comment-replay-wrap-boxx">
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                            </div>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-media-comment-list">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">
+                                                            Sarah Cruiz
+                                                            <span class="comments-text-content">
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                            </span>
+                                                            <div class="like-comment-replay-wrap-boxx">
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                            </div>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wp-single-post-comment-wrap">
+                                        <div class="media connexus-comment-section-wrap connexus-input-section-wrap">
+                                            <img src="images/user-dummy.jpg" alt="Jane Doe" class="mr-3 rounded-circle" width="50px">
+                                            <div class="media-body">
+                                                <form class="post-comment-form" action="#" method="post">
+                                                    <input type="text" class="form-control" placeholder="Post a Comment"/>
+                                                    <button class="btn btn-sumnit-comment post-comment" type="submit"><i class="fab fa-telegram-plane"></i></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SINGLE POST -->
+                    <!-- START SINGLE POST -->
+                    <div class="wp-single-post-list wp-no-img-video-only-content-wrap">
+                        <div class="row m-0">
+                            <div class="col-md-6 p-0">
+                                <div class="wp-single-post-content-wrap-area">
+                                    <div class="wp-single-post-content-wrap">
+                                        <div class="media">
+                                            <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="70px">
+                                            <div class="media-body">
+                                                <div class="conn-my-post-details-user-title">
+                                                    <h5 class="publisher-name-text">Sarah Cruiz <span class="conn-following-wrap"><a href="#" class="conn-following-title">following</a></span></h5>
+                                                    <p class="published-time-ago-text">Published a photo about 15min ago</p>
+                                                </div>
+                                                <div class="conn-like-unlike-icon-wrap">
+                                                    <span class="conn-like-icon wp-like-hover-info-view"><a href="#" class=""><i class="fas fa-thumbs-up"> Like</i></a>
+                                                        <div class="wp-total-likes-name-and-count">
+                                                            <span>John Deo</span>
+                                                            <span>John Paul</span>
+                                                            <span>Pater Pan</span>
+                                                            <span>John Deo</span>
+                                                            <span>John Paul</span>
+                                                            <span>Pater Pan</span>
+                                                            <span>John Deo</span>
+                                                            <span>John Paul</span>
+                                                            <span>Pater Pan</span>
+                                                            <span>.. 98 more</span>
+                                                        </div>
+                                                    </span>
+                                                    <span class="expand-post-btn-icon"><a href="#"><i class="fas fa-expand"></i></a></span>
+                                                </div>
+                                                <p class="conn-my-post-commemnt-content">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 p-0">
+                                <div class="wp-single-post-content-wrap-area">
+                                    <div class="wp-single-post-comment-listing-wrap">
+                                        <div class="single-media-comment-list">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">
+                                                            Sarah Cruiz
+                                                            <span class="comments-text-content">
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                            </span>
+                                                            <div class="like-comment-replay-wrap-boxx">
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                            </div>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-media-comment-list">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">
+                                                            Sarah Cruiz
+                                                            <span class="comments-text-content">
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                            </span>
+                                                            <div class="like-comment-replay-wrap-boxx">
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                            </div>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-media-comment-list">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">
+                                                            Sarah Cruiz
+                                                            <span class="comments-text-content">
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                            </span>
+                                                            <div class="like-comment-replay-wrap-boxx">
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                            </div>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-media-comment-list">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">
+                                                            Sarah Cruiz
+                                                            <span class="comments-text-content">
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                            </span>
+                                                            <div class="like-comment-replay-wrap-boxx">
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                            </div>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-media-comment-list">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">
+                                                            Sarah Cruiz
+                                                            <span class="comments-text-content">
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                            </span>
+                                                            <div class="like-comment-replay-wrap-boxx">
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                            </div>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wp-single-post-comment-wrap">
+                                        <div class="media connexus-comment-section-wrap connexus-input-section-wrap">
+                                            <img src="images/user-dummy.jpg" alt="Jane Doe" class="mr-3 rounded-circle" width="50px">
+                                            <div class="media-body">
+                                                <form class="post-comment-form" action="#" method="post">
+                                                    <input type="text" class="form-control" placeholder="Post a Comment"/>
+                                                    <button class="btn btn-sumnit-comment post-comment" type="submit"><i class="fab fa-telegram-plane"></i></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SINGLE POST -->
+                    <!-- START SINGLE POST -->
+                    <div class="wp-single-post-list">
+                        <div class="row m-0">
+                            <div class="col-md-6 p-0">
+                                <div class="conn-my-post-img-wrap">
+                                    <!-- <img src="images/user-img.png" class="img-fluid"> -->
+                                    <video width="100%" controls autoplay repeat>
+                                        <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+                                        <source src="http://techslides.com/demos/sample-videos/small.ogg" type="video/ogg">
+                                        Your browser does not support HTML5 video.
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="col-md-6 p-0">
+                                <div class="wp-single-post-content-wrap-area">
+                                    <div class="wp-single-post-content-wrap">
+                                        <div class="media">
+                                            <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="70px">
+                                            <div class="media-body">
+                                                <div class="conn-my-post-details-user-title">
+                                                    <h5 class="publisher-name-text">Sarah Cruiz <span class="conn-following-wrap"><a href="#" class="conn-following-title">following</a></span></h5>
+                                                    <p class="published-time-ago-text">Published a photo about 15min ago</p>
+                                                </div>
+                                                <div class="conn-like-unlike-icon-wrap">
+                                                    <span class="conn-like-icon wp-like-hover-info-view"><a href="#" class=""><i class="fas fa-thumbs-up"> Like</i></a>
+                                                        <div class="wp-total-likes-name-and-count">
+                                                            <span>John Deo</span>
+                                                            <span>John Paul</span>
+                                                            <span>Pater Pan</span>
+                                                            <span>John Deo</span>
+                                                            <span>John Paul</span>
+                                                            <span>Pater Pan</span>
+                                                            <span>John Deo</span>
+                                                            <span>John Paul</span>
+                                                            <span>Pater Pan</span>
+                                                            <span>.. 98 more</span>
+                                                        </div>
+                                                    </span>
+                                                    <span class="expand-post-btn-icon"><a href="#"><i class="fas fa-expand"></i></a></span>
+                                                </div>
+                                                <p class="conn-my-post-commemnt-content">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wp-single-post-comment-listing-wrap">
+                                        <div class="single-media-comment-list">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">
+                                                            Sarah Cruiz
+                                                            <span class="comments-text-content">
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                            </span>
+                                                            <div class="like-comment-replay-wrap-boxx">
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                            </div>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-media-comment-list">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">
+                                                            Sarah Cruiz
+                                                            <span class="comments-text-content">
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                            </span>
+                                                            <div class="like-comment-replay-wrap-boxx">
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                            </div>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-media-comment-list">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">
+                                                            Sarah Cruiz
+                                                            <span class="comments-text-content">
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                            </span>
+                                                            <div class="like-comment-replay-wrap-boxx">
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                            </div>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wp-single-post-comment-wrap">
+                                        <div class="media connexus-comment-section-wrap connexus-input-section-wrap">
+                                            <img src="images/user-dummy.jpg" alt="Jane Doe" class="mr-3 rounded-circle" width="50px">
+                                            <div class="media-body">
+                                                <form class="post-comment-form" action="#" method="post">
+                                                    <input type="text" class="form-control" placeholder="Post a Comment"/>
+                                                    <button class="btn btn-sumnit-comment post-comment" type="submit"><i class="fab fa-telegram-plane"></i></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SINGLE POST -->
+                </div>
+            </div>
+        </section>
+        <!-- END MY POST SECTION -->
+
+        <!-- START MY FRIEND'S POST -->
+        <section class="wp-main-post-listing-wrap-area">
+            <div class="container">
+                <div class="wp-list-title-wrap">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="conn-my-post-details-title-wrap">
+                                <h4 class="conn-my-post-details-title">My Friend's Post</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wp-scrollble-main-post-list-wrap">
+                    <!-- START SINGLE POST -->
+                    <div class="wp-single-post-list">
+                        <div class="row m-0">
+                            <div class="col-md-6 p-0">
+                                <div class="conn-my-post-img-wrap" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                    <img src="images/user-img.png" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-6 p-0">
+                                <div class="wp-single-post-content-wrap-area">
+                                    <div class="wp-single-post-content-wrap">
+                                        <div class="media">
+                                            <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="70px">
+                                            <div class="media-body">
+                                                <div class="conn-my-post-details-user-title">
+                                                    <h5 class="publisher-name-text">Sarah Cruiz <span class="conn-following-wrap"><a href="#" class="conn-following-title">following</a></span></h5>
+                                                    <p class="published-time-ago-text">Published a photo about 15min ago</p>
+                                                </div>
+                                                <div class="conn-like-unlike-icon-wrap">
+                                                    <span class="conn-like-icon wp-like-hover-info-view"><a href="#" class=""><i class="fas fa-thumbs-up"> Like</i></a>
+                                                        <div class="wp-total-likes-name-and-count">
+                                                            <span>John Deo</span>
+                                                            <span>John Paul</span>
+                                                            <span>Pater Pan</span>
+                                                            <span>John Deo</span>
+                                                            <span>John Paul</span>
+                                                            <span>Pater Pan</span>
+                                                            <span>John Deo</span>
+                                                            <span>John Paul</span>
+                                                            <span>Pater Pan</span>
+                                                            <span>.. 98 more</span>
+                                                        </div>
+                                                    </span>
+                                                    <span class="expand-post-btn-icon"><a href="javascript:;" data-toggle="modal" data-target="#myModal"><i class="fas fa-expand"></i></a></span>
+                                                </div>
+                                                <p class="conn-my-post-commemnt-content">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wp-single-post-comment-listing-wrap">
+                                        <div class="single-media-comment-list">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">
+                                                            Sarah Cruiz
+                                                            <span class="comments-text-content">
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                            </span>
+                                                            <div class="like-comment-replay-wrap-boxx">
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                            </div>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-media-comment-list">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">
+                                                            Sarah Cruiz
+                                                            <span class="comments-text-content">
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                            </span>
+                                                            <div class="like-comment-replay-wrap-boxx">
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                            </div>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-media-comment-list">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">
+                                                            Sarah Cruiz
+                                                            <span class="comments-text-content">
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                            </span>
+                                                            <div class="like-comment-replay-wrap-boxx">
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                            </div>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wp-single-post-comment-wrap">
+                                        <div class="media connexus-comment-section-wrap connexus-input-section-wrap">
+                                            <img src="images/user-dummy.jpg" alt="Jane Doe" class="mr-3 rounded-circle" width="50px">
+                                            <div class="media-body">
+                                                <form class="post-comment-form" action="#" method="post">
+                                                    <input type="text" class="form-control" placeholder="Post a Comment"/>
+                                                    <button class="btn btn-sumnit-comment post-comment" type="submit"><i class="fab fa-telegram-plane"></i></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SINGLE POST -->
+                    <!-- START SINGLE POST -->
+                    <div class="wp-single-post-list wp-no-img-video-only-content-wrap">
+                        <div class="row m-0">
+                            <div class="col-md-6 p-0">
+                                <div class="wp-single-post-content-wrap-area">
+                                    <div class="wp-single-post-content-wrap">
+                                        <div class="media">
+                                            <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="70px">
+                                            <div class="media-body">
+                                                <div class="conn-my-post-details-user-title">
+                                                    <h5 class="publisher-name-text">Sarah Cruiz <span class="conn-following-wrap"><a href="#" class="conn-following-title">following</a></span></h5>
+                                                    <p class="published-time-ago-text">Published a photo about 15min ago</p>
+                                                </div>
+                                                <div class="conn-like-unlike-icon-wrap">
+                                                    <span class="conn-like-icon wp-like-hover-info-view"><a href="#" class=""><i class="fas fa-thumbs-up"> Like</i></a>
+                                                        <div class="wp-total-likes-name-and-count">
+                                                            <span>John Deo</span>
+                                                            <span>John Paul</span>
+                                                            <span>Pater Pan</span>
+                                                            <span>John Deo</span>
+                                                            <span>John Paul</span>
+                                                            <span>Pater Pan</span>
+                                                            <span>John Deo</span>
+                                                            <span>John Paul</span>
+                                                            <span>Pater Pan</span>
+                                                            <span>.. 98 more</span>
+                                                        </div>
+                                                    </span>
+                                                    <span class="expand-post-btn-icon"><a href="#"><i class="fas fa-expand"></i></a></span>
+                                                </div>
+                                                <p class="conn-my-post-commemnt-content">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 p-0">
+                                <div class="wp-single-post-content-wrap-area">
+                                    <div class="wp-single-post-comment-listing-wrap">
+                                        <div class="single-media-comment-list">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">
+                                                            Sarah Cruiz
+                                                            <span class="comments-text-content">
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                            </span>
+                                                            <div class="like-comment-replay-wrap-boxx">
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                            </div>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-media-comment-list">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">
+                                                            Sarah Cruiz
+                                                            <span class="comments-text-content">
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                            </span>
+                                                            <div class="like-comment-replay-wrap-boxx">
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                            </div>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-media-comment-list">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">
+                                                            Sarah Cruiz
+                                                            <span class="comments-text-content">
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                            </span>
+                                                            <div class="like-comment-replay-wrap-boxx">
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                            </div>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-media-comment-list">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">
+                                                            Sarah Cruiz
+                                                            <span class="comments-text-content">
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                            </span>
+                                                            <div class="like-comment-replay-wrap-boxx">
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                            </div>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-media-comment-list">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">
+                                                            Sarah Cruiz
+                                                            <span class="comments-text-content">
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                            </span>
+                                                            <div class="like-comment-replay-wrap-boxx">
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                            </div>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wp-single-post-comment-wrap">
+                                        <div class="media connexus-comment-section-wrap connexus-input-section-wrap">
+                                            <img src="images/user-dummy.jpg" alt="Jane Doe" class="mr-3 rounded-circle" width="50px">
+                                            <div class="media-body">
+                                                <form class="post-comment-form" action="#" method="post">
+                                                    <input type="text" class="form-control" placeholder="Post a Comment"/>
+                                                    <button class="btn btn-sumnit-comment post-comment" type="submit"><i class="fab fa-telegram-plane"></i></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SINGLE POST -->
+                    <!-- START SINGLE POST -->
+                    <div class="wp-single-post-list">
+                        <div class="row m-0">
+                            <div class="col-md-6 p-0">
+                                <div class="conn-my-post-img-wrap">
+                                    <!-- <img src="images/user-img.png" class="img-fluid"> -->
+                                    <video width="100%" controls autoplay repeat>
+                                        <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+                                        <source src="http://techslides.com/demos/sample-videos/small.ogg" type="video/ogg">
+                                        Your browser does not support HTML5 video.
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="col-md-6 p-0">
+                                <div class="wp-single-post-content-wrap-area">
+                                    <div class="wp-single-post-content-wrap">
+                                        <div class="media">
+                                            <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="70px">
+                                            <div class="media-body">
+                                                <div class="conn-my-post-details-user-title">
+                                                    <h5 class="publisher-name-text">Sarah Cruiz <span class="conn-following-wrap"><a href="#" class="conn-following-title">following</a></span></h5>
+                                                    <p class="published-time-ago-text">Published a photo about 15min ago</p>
+                                                </div>
+                                                <div class="conn-like-unlike-icon-wrap">
+                                                    <span class="conn-like-icon wp-like-hover-info-view"><a href="#" class=""><i class="fas fa-thumbs-up"> Like</i></a>
+                                                        <div class="wp-total-likes-name-and-count">
+                                                            <span>John Deo</span>
+                                                            <span>John Paul</span>
+                                                            <span>Pater Pan</span>
+                                                            <span>John Deo</span>
+                                                            <span>John Paul</span>
+                                                            <span>Pater Pan</span>
+                                                            <span>John Deo</span>
+                                                            <span>John Paul</span>
+                                                            <span>Pater Pan</span>
+                                                            <span>.. 98 more</span>
+                                                        </div>
+                                                    </span>
+                                                    <span class="expand-post-btn-icon"><a href="#"><i class="fas fa-expand"></i></a></span>
+                                                </div>
+                                                <p class="conn-my-post-commemnt-content">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wp-single-post-comment-listing-wrap">
+                                        <div class="single-media-comment-list">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">
+                                                            Sarah Cruiz
+                                                            <span class="comments-text-content">
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                            </span>
+                                                            <div class="like-comment-replay-wrap-boxx">
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                            </div>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-media-comment-list">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">
+                                                            Sarah Cruiz
+                                                            <span class="comments-text-content">
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                            </span>
+                                                            <div class="like-comment-replay-wrap-boxx">
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                            </div>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-media-comment-list">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">
+                                                            Sarah Cruiz
+                                                            <span class="comments-text-content">
+                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                            </span>
+                                                            <div class="like-comment-replay-wrap-boxx">
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                            </div>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wp-single-post-comment-wrap">
+                                        <div class="media connexus-comment-section-wrap connexus-input-section-wrap">
+                                            <img src="images/user-dummy.jpg" alt="Jane Doe" class="mr-3 rounded-circle" width="50px">
+                                            <div class="media-body">
+                                                <form class="post-comment-form" action="#" method="post">
+                                                    <input type="text" class="form-control" placeholder="Post a Comment"/>
+                                                    <button class="btn btn-sumnit-comment post-comment" type="submit"><i class="fab fa-telegram-plane"></i></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SINGLE POST -->
+                </div>
+            </div>
+        </section>
+        <!-- END MY FRIEND'S POST -->
+
+
+        <!-- START MODAL POPUP -->
+        <div class="modal single-post-poup" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <button type="button" class="close modal-close-btn-abs" data-dismiss="modal">&times;</button>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <!-- START SINGLE POST -->
+                        <div class="wp-single-post-list">
+                            <div class="row m-0">
+                                <div class="col-md-6 p-0">
+                                    <div class="conn-my-post-img-wrap">
+                                        <img src="images/user-img.png" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 p-0">
+                                    <div class="wp-single-post-content-wrap-area">
+                                        <div class="wp-single-post-content-wrap">
+                                            <div class="media">
+                                                <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="70px">
+                                                <div class="media-body">
+                                                    <div class="conn-my-post-details-user-title">
+                                                        <h5 class="publisher-name-text">Sarah Cruiz <span class="conn-following-wrap"><a href="#" class="conn-following-title">following</a></span></h5>
+                                                        <p class="published-time-ago-text">Published a photo about 15min ago</p>
+                                                    </div>
+                                                    <div class="conn-like-unlike-icon-wrap">
+                                                        <span class="conn-like-icon wp-like-hover-info-view"><a href="#" class="active "><i class="fas fa-thumbs-up"> Like</i></a>
+                                                            <div class="">
+
+                                                            </div>
+                                                        </span>
+                                                    </div>
+                                                    <p class="conn-my-post-commemnt-content">
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wp-single-post-comment-listing-wrap">
+                                            <div class="single-media-comment-list">
+                                                <div class="media">
+                                                    <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                    <div class="media-body">
+                                                        <div class="conn-my-post-details-user-title">
+                                                            <h5 class="publisher-name-text">
+                                                                Sarah Cruiz
+                                                                <span class="comments-text-content">
+                                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                                </span>
+                                                                <div class="like-comment-replay-wrap-boxx">
+                                                                    <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                    <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                                </div>
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-media-comment-list">
+                                                <div class="media">
+                                                    <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                    <div class="media-body">
+                                                        <div class="conn-my-post-details-user-title">
+                                                            <h5 class="publisher-name-text">
+                                                                Sarah Cruiz
+                                                                <span class="comments-text-content">
+                                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                                </span>
+                                                                <div class="like-comment-replay-wrap-boxx">
+                                                                    <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                    <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                                </div>
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-media-comment-list">
+                                                <div class="media">
+                                                    <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                    <div class="media-body">
+                                                        <div class="conn-my-post-details-user-title">
+                                                            <h5 class="publisher-name-text">
+                                                                Sarah Cruiz
+                                                                <span class="comments-text-content">
+                                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                                </span>
+                                                                <div class="like-comment-replay-wrap-boxx">
+                                                                    <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                    <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                                </div>
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-media-comment-list">
+                                                <div class="media">
+                                                    <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                    <div class="media-body">
+                                                        <div class="conn-my-post-details-user-title">
+                                                            <h5 class="publisher-name-text">
+                                                                Sarah Cruiz
+                                                                <span class="comments-text-content">
+                                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                                </span>
+                                                                <div class="like-comment-replay-wrap-boxx">
+                                                                    <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                    <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                                </div>
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-media-comment-list">
+                                                <div class="media">
+                                                    <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                    <div class="media-body">
+                                                        <div class="conn-my-post-details-user-title">
+                                                            <h5 class="publisher-name-text">
+                                                                Sarah Cruiz
+                                                                <span class="comments-text-content">
+                                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                                </span>
+                                                                <div class="like-comment-replay-wrap-boxx">
+                                                                    <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                    <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                                </div>
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-media-comment-list">
+                                                <div class="media">
+                                                    <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                    <div class="media-body">
+                                                        <div class="conn-my-post-details-user-title">
+                                                            <h5 class="publisher-name-text">
+                                                                Sarah Cruiz
+                                                                <span class="comments-text-content">
+                                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                                </span>
+                                                                <div class="like-comment-replay-wrap-boxx">
+                                                                    <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                    <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                                </div>
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-media-comment-list">
+                                                <div class="media">
+                                                    <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                    <div class="media-body">
+                                                        <div class="conn-my-post-details-user-title">
+                                                            <h5 class="publisher-name-text">
+                                                                Sarah Cruiz
+                                                                <span class="comments-text-content">
+                                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                                </span>
+                                                                <div class="like-comment-replay-wrap-boxx">
+                                                                    <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                    <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                                </div>
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-media-comment-list">
+                                                <div class="media">
+                                                    <img src="images/user-dummy.jpg" alt="Img" class="mr-3 rounded-circle" width="50px">
+                                                    <div class="media-body">
+                                                        <div class="conn-my-post-details-user-title">
+                                                            <h5 class="publisher-name-text">
+                                                                Sarah Cruiz
+                                                                <span class="comments-text-content">
+                                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                                                </span>
+                                                                <div class="like-comment-replay-wrap-boxx">
+                                                                    <a href="#" class="like-comment-replay-link link"><i class="fas fa-thumbs-up"></i> Like</a>
+                                                                    <a href="#" class="like-comment-replay-link link"><i class="fas fa-reply"></i> Reply</a>
+                                                                </div>
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wp-single-post-comment-wrap">
+                                            <div class="media connexus-comment-section-wrap connexus-input-section-wrap">
+                                                <img src="images/user-dummy.jpg" alt="Jane Doe" class="mr-3 rounded-circle" width="50px">
+                                                <div class="media-body">
+                                                    <form class="post-comment-form" action="#" method="post">
+                                                        <input type="text" class="form-control" placeholder="Post a Comment"/>
+                                                        <button class="btn btn-sumnit-comment post-comment" type="submit"><i class="fab fa-telegram-plane"></i></button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END SINGLE POST -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL POPUP -->
+
+
+
+        <!-- START SEND INVITATION MODAL POPUP -->
+        <div class="modal send-invitation-popup" id="SendInvite">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close modal-close-btn-abs" data-dismiss="modal">&times;</button>
+                    <div class="modal-body">
+                        <div class="send-invitation-modal-content-wrap">
+                            <div class="send-invitation-modal-text-content-wrap">
+                                <h1 class="end-invitation-modal-title-text">Invite friends</h1>
+                                <p class="send-invitation-modal-text-content">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </p>
+                            </div>
+                            <div class="send-invitation-form-wrap">
+                                <form class="send-invitation-form" method="post" action="#">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" placeholder="Email Id"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn send-invitation-btn" type="submit">Send</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END SEND INVITATION MODAL POPUP -->
+
+        <!-- START SEND INVITATION MODAL POPUP -->
+        <div class="modal social-post-popup" id="SocialPost">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close modal-close-btn-abs" data-dismiss="modal">&times;</button>
+                    <div class="modal-body">
+                        <div class="post-social-form-wrap">
+                            <form class="post-social-form">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Write what u wish"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Start Image Preview Thumb -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <!-- Add Here Image Thumbnail Preview  -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Image Preview Thumb -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class="conn-profile-details-icon-wrap">
+                                                        <a href="javascript:void(0);" class="link-for link-for-camera">
+                                                            <i class="fas fa-camera"></i>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="link-for link-for-video">
+                                                            <i class="fas fa-video"></i>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="link-for link-for-location">
+                                                            <i class="fas fa-map-marker-alt"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <button class="btn send-invitation-btn" type="submit">Publish</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END SEND INVITATION MODAL POPUP -->
+
+
+    </body>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</html>

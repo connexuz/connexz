@@ -1,0 +1,24 @@
+[2019-05-01 10:34:18] production.ERROR: file_put_contents(/home/demowork/connexuz/public_html/storage/framework/sessions/38AuAMoT4jo0JW4bo2JoPKCIcz1W8I1nhuLcB2Hr): failed to open stream: Permission denied {"exception":"[object] (ErrorException(code: 0): file_put_contents(/home/demowork/connexuz/public_html/storage/framework/sessions/38AuAMoT4jo0JW4bo2JoPKCIcz1W8I1nhuLcB2Hr): failed to open stream: Permission denied at /home/demowork/connexuz/public_html/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:122)
+[stacktrace]
+#0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'file_put_conten...', '/home/demowork/...', 122, Array)
+#1 /home/demowork/connexuz/public_html/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(122): file_put_contents('/home/demowork/...', 'a:4:{s:6:\"_toke...', 2)
+#2 /home/demowork/connexuz/public_html/vendor/laravel/framework/src/Illuminate/Session/FileSessionHandler.php(83): Illuminate\\Filesystem\\Filesystem->put('/home/demowork/...', 'a:4:{s:6:\"_toke...', true)
+#3 /home/demowork/connexuz/public_html/vendor/laravel/framework/src/Illuminate/Session/Store.php(129): Illuminate\\Session\\FileSessionHandler->write('38AuAMoT4jo0JW4...', 'a:4:{s:6:\"_toke...')
+#4 /home/demowork/connexuz/public_html/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(87): Illuminate\\Session\\Store->save()
+#5 /home/demowork/connexuz/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(218): Illuminate\\Session\\Middleware\\StartSession->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\RedirectResponse))
+#6 /home/demowork/connexuz/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(189): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\RedirectResponse))
+#7 /home/demowork/connexuz/public_html/public/index.php(58): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\RedirectResponse))
+#8 {main}
+"} 
+[2019-05-01 16:11:00] production.ERROR: file_put_contents(/home/demowork/connexuz/public_html/storage/framework/sessions/uZ6By8Sg1FDZREBuc1HRqdY2K7lc7BGdsTnw3ztT): failed to open stream: Permission denied {"exception":"[object] (ErrorException(code: 0): file_put_contents(/home/demowork/connexuz/public_html/storage/framework/sessions/uZ6By8Sg1FDZREBuc1HRqdY2K7lc7BGdsTnw3ztT): failed to open stream: Permission denied at /home/demowork/connexuz/public_html/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:122)
+[stacktrace]
+#0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'file_put_conten...', '/home/demowork/...', 122, Array)
+#1 /home/demowork/connexuz/public_html/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(122): file_put_contents('/home/demowork/...', 'a:3:{s:6:\"_toke...', 2)
+#2 /home/demowork/connexuz/public_html/vendor/laravel/framework/src/Illuminate/Session/FileSessionHandler.php(83): Illuminate\\Filesystem\\Filesystem->put('/home/demowork/...', 'a:3:{s:6:\"_toke...', true)
+#3 /home/demowork/connexuz/public_html/vendor/laravel/framework/src/Illuminate/Session/Store.php(129): Illuminate\\Session\\FileSessionHandler->write('uZ6By8Sg1FDZREB...', 'a:3:{s:6:\"_toke...')
+#4 /home/demowork/connexuz/public_html/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(87): Illuminate\\Session\\Store->save()
+#5 /home/demowork/connexuz/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(218): Illuminate\\Session\\Middleware\\StartSession->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#6 /home/demowork/connexuz/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(189): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#7 /home/demowork/connexuz/public_html/public/index.php(58): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#8 {main}
+"} 

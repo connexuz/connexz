@@ -1,0 +1,14 @@
+.has-error {
+    border-color: #f00 !important;
+    background: #FFF;
+    color: #f00;
+    background-image: url(../img/validation.svg) !important;
+    background-repeat: no-repeat !important;
+    background-position: right 10px center !important;
+}
+.my-requests-tab-content{
+    display: none;
+}
+.search-friend-tab-content{
+    display: none;
+}
